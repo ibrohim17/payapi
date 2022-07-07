@@ -1,0 +1,157 @@
+.section {
+
+  &__title {
+    width: 546px;
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -0.553846px;
+    color: #36536B;
+  }
+
+  &__input {
+    width: 330px;
+    background: #FBFCFE;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    padding: 15px 25px;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #36536B;
+    
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    position: relative;
+    left: -50px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #6C8294;
+  }
+
+  &__link {
+    font-weight: 700;
+    text-decoration: none;
+    color: #6C8294;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    width: 780px;
+    height: 900px;
+    background-image: url("../../images/bg-img.png");
+    z-index: -1;
+    top: -150px;
+    right: -100px;
+  }
+}
+
+@media only screen and(max-width: 769px) {
+  .section {
+
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__img {
+      display: none;
+    }
+
+    &__tablet-img {
+      width: 970px;
+      height: 1200px;
+      background-image: url("../../images/bg-img-3.png");
+      position: absolute;
+      top: -600px;
+      left: -90px;
+    }
+
+    &__wrapper {
+      max-width: 575px;
+      width: 100%;
+      margin-left: 50px;
+      margin-top: 400px;
+      text-align: center;
+    }
+
+    &__title {
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+      text-align: center;
+      letter-spacing: -0.369231px;
+    }
+
+    &__input {
+      width: 280px;
+    }
+
+    &__button {
+      left: -40px;
+    }
+  }
+}
+
+@media only screen and(max-width: 426px) {
+  .section {
+
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__img {
+      display: none;
+    }
+
+    &__tablet-img {
+      width: 780px;
+      height: 1180px;
+      background-image: url("../../images/bg-img-3.png");
+      position: absolute;
+      top: -650px;
+      left: -275px;
+    }
+
+    &__wrapper {
+      max-width: 330px;
+      width: 100%;
+      margin-top: 400px;
+      text-align: left;
+    }
+
+    &__title {
+      font-size: 32px;
+      width: 320px;
+      margin-top: 0;
+      margin-left: -30px;
+    }
+
+    &__input {
+      width: 350px;
+      margin-left: -40px;
+    }
+
+    &__button {
+      z-index: 2;
+    }
+  }
+}

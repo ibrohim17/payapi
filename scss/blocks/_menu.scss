@@ -1,0 +1,51 @@
+.menu {
+
+  position: relative;
+
+  &__img-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    margin-left: -56px;
+    margin-top: 90px;
+  }
+
+  &__title {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #36536B;
+  }
+
+  &__text {
+    width: 445px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #6C8294;
+  }
+
+  &__two-img {
+    display: flex;
+    margin-left: 100px;
+  }
+
+  &__iphone-img {
+    margin-top: 90px;
+  }
+
+  &__bg-img {
+    background-image: url("../../images/oval-img.png");
+    position: absolute;
+    width: 780px;
+    height: 780px;
+    z-index: -1;
+    top: 510px;
+    right: -450px;
+  }
+}
